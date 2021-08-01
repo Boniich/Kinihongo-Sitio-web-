@@ -1,0 +1,702 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* etiquetas */
+
+body{
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+hr{
+    border: 0.1px solid #ffa31a;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(34, 129, 199);
+    width: 100vw;
+    height: auto;
+    
+}
+
+footer > h1{
+    margin: 0 0;
+    text-align: center;
+    
+}
+
+/* ID */
+
+#btn_login_cursos{
+    margin-right: 8px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ffa31a;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#btn_login_cursos:hover{
+    background-color: rgba(7, 25, 80, 0.541);
+    color: #fff;
+ 
+}
+
+#yt_ultima_img{
+    display: none;
+}
+
+#banner_cursos{
+    height: auto;
+}
+
+#titulo_cursos h1{
+    font-size: 22px;
+    text-align: center;
+}
+
+
+
+
+/* Clases */
+
+.barra{
+
+    width: 100%;
+    height: 50px;
+    background-color: rgb(34, 129, 199);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+.navegacion li{
+    display: inline-block;
+
+}
+
+.botones:hover{
+    color: #ffa31a;
+}
+
+
+
+.botones{
+
+    padding: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.icon{
+      padding: 10px; 
+      font-size: 28px;
+      cursor: pointer;
+}
+
+
+.menu{
+    display: flex;
+    position: fixed; 
+    width: 100vw;
+    height: calc(100% - 50px);
+    opacity: 95%;
+    background-color: #1a1a1a;
+    left: -100vw;
+    top: 50px;
+    transition: all .5s;
+    font-size: 18px;
+    text-align: center;
+    flex-direction: column;
+    z-index: 80;
+    
+}
+
+
+.menu li{
+    padding: 10px 0px;
+    border-bottom: 1px solid gray;
+   
+}
+
+.menu li a {
+    padding: 7px 13px;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    
+}
+
+.menu li a:hover{
+ 
+    color: #ffa31a;
+    
+}
+
+.menu.open{
+    top: 50px;
+    left: 0vw;
+  
+}
+
+
+
+.menu .redes, .sub_menu_redes{
+    display: none;
+}
+
+.logo img{
+    padding: 10px 10px;
+   
+}
+
+.conteiner_flex{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.banner{
+    background-color: rgb(34, 129, 199);
+    width: 100vw;
+    height: 120px;
+    border-radius: 8px 8px 0px 0px;
+    color: #fff;
+}
+
+.titulos h1{
+
+    margin: 0;
+    padding: 10px 12px;
+    font-size: 25px;
+
+
+}
+
+.banner_icono{
+    font-size: 40px;
+    color: black;
+}
+
+.banner_lista_botones{
+    margin-left: 5px;
+}
+
+.banner_lista_botones li{
+    display: inline-block;
+    padding: 5px 7px;
+}
+
+/* slider */
+
+.slider{
+    position: relative;
+    
+}
+  
+  
+  
+  .slider-lista li{
+  
+    width: 100vw;
+
+  
+}
+  
+  
+  
+  .slider-lista img{
+  
+    width: 100%;
+  
+  
+  }
+  
+  .pagination {
+  
+    position: absolute;
+    left: 40%;
+    bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  
+  }
+  
+  .left, .right{
+  
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    
+  
+  }
+  .right{
+  
+    right: 10px;
+  }
+  
+  .left{
+  
+    left: 10px;
+  }
+  
+  .pagination li{
+    
+    font-size: 15px;
+    padding: 0px 5px;
+    color: #858585;
+    cursor: pointer;
+  
+  }
+
+
+  
+  .informacion{
+    background-color: #fff;
+    width: 100vw;
+    height: 300px;
+}
+
+.informacion h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.informacion_imagen img{
+    display: none;
+}
+
+.texto_info{
+    padding: 5px 13px;
+}
+
+.youtube_info{
+    width: 100vw;
+    background: #252b2b;
+    height: auto;
+
+    
+}
+
+.youtube_info h1{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.youtube_imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.youtube_imagenes li{
+    width: 300px;
+    height: 200px;
+    padding: 8px 10px;
+}
+
+.youtube_imagenes img{
+    width: 300px;
+    height: 200px;
+    
+}
+
+
+.titulo_footer h1{
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+.lista_redes_footer{
+    margin-bottom: 20px;
+}
+
+.lista_redes_footer li{
+    display: inline-block;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.icon_redes{
+    font-size: 30px;
+    color: #fff;
+}
+
+.icon_redes i:hover{
+    transform: scale(2.0);
+    transition: all 0.2s;
+}
+
+.caja_cursos{
+    background-color: #fff;
+    width: 100vw;
+
+    height: auto;
+}
+
+.conteiner_caja{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    
+
+
+}
+
+.cajas{
+    background-color: rgb(34, 129, 199);
+    width: 250px;
+    height: 300px;
+    margin: 10px 0;
+    border-radius: 5px 5px;
+  
+   
+}
+.imagenes_cursos{
+    width: 250px;
+    height: 130px;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+.curso_info h1{
+    text-align: center;
+    font-size: 25px;
+    margin: 0 0;
+    padding: 10px 0;
+    cursor: pointer;
+
+}
+
+.curso_info h1 a{
+    color: #fff;
+}
+
+.curso_info p{
+    padding: 0 8px;
+    color:  #e6e6e6;
+}
+
+.entrada_cursos h1{
+    font-size: 25px;
+    margin: 0 0;
+    padding: 8px 13px;
+}
+
+.entrada_cursos p{
+    font-size: 18px;
+    padding: 0px 20px;
+
+}
+
+.cursos_datos{
+    padding: 15px 13px;
+}
+
+.caja_btn_adquirir {
+    padding: 10px 25px;
+}
+
+.caja_btn_adquirir a{
+    border: 1px solid #ffa31a;
+    border-radius: 5px;
+    padding: 5px 8px;
+    color: #fff;
+}
+
+.descripcion_cursos{
+
+    box-shadow: 10px 5px 5px rgb(175, 175, 175);
+    border-left: 3px solid rgb(34, 129, 199);
+    margin: 20px 10px;
+    
+}
+
+.descripcion_cursos h1{
+    margin: 0;
+    padding: 8px 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.descripcion_cursos p{
+    padding-left: 10px;
+}
+
+.descripcion_cajas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.descripcion_caja1,
+.descripcion_caja2,
+.descripcion_caja3{
+
+    padding: 8px 13px;
+    width: 250px;
+}
+
+.linea_cursos{
+    border: 1px solid rgb(175, 175, 175);
+}
+
+
+.conteiner_temario > h1{
+
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.caja_temario{
+
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 0 10px 20px 10px;
+}
+
+.caja_temario li{
+    padding: 10px 8px;
+}
+
+.caja_temario h1{
+    font-size: 18px;
+}
+
+
+.conteiner_formulario{
+    width: 80vw;
+    background-color: rgb(34, 129, 199);
+    height: auto;
+    padding: 20px 0;
+    border-radius: 8px 8px 8px 8px;
+    margin: 0 auto;
+
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+
+.formulario input{
+    width: 70vw;
+    margin: 2px 0;
+    outline: none;
+}
+
+.formulario input[type="text"],input[type="password"]{
+    height: 25px;
+    background: none;
+    border: 1px solid rgba(75, 61, 61, 0.753);
+    padding: 3px 5px;
+    color: #fff;
+    
+}
+
+
+.formulario input[type="text"]:focus{
+    border: 1px solid #ffa31a;
+
+}
+
+.formulario input::placeholder{
+    color: rgb(20, 19, 19);
+}
+
+.formulario input[type="submit"]{
+    width: 90px;
+    height: 30px;
+    background: none;
+    border: 1px solid #ffa31a;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.formulario input[type="submit"]:hover{background-color: rgba(7, 25, 80, 0.541);}
+
+.titulo_blog a{
+    font-size: 18px;
+
+}
+
+
+@media screen and (min-width: 800px) {
+
+ 
+    .banner,.slider-lista li,.caja,.informacion, .youtube_info, footer,.caja_cursos{
+        width: 70vw;
+    }
+
+    .barra{
+        justify-content: space-around;
+  
+    }
+
+
+
+
+    .icon{
+        display: none;
+    }
+    
+    .menu{
+        opacity:none;
+        position: unset;
+        width: 100%;
+        flex-direction: row;
+        left: 0;
+        background: none;
+        text-align: center;
+        transition: none;
+    }
+
+    .menu li{
+        border-bottom: none;
+    }
+
+    .menu li a{
+        padding: 5px 10px;
+    }
+
+    .menu .redes{
+        display: inline-block;
+    }
+
+    .sub_menu_redes{
+        position: absolute;
+        background-color: rgb(34, 129, 199);
+        padding: 5px 8px;
+        color: #fff;
+        font-size: 18px;
+        
+    }
+
+    .sub_menu_redes li{
+        cursor: pointer;
+    }
+
+    .sub_menu_redes li a {
+        text-transform: none;
+    }
+
+    .sub_menu_redes li:hover{
+        color: #ffa31a;
+    }
+
+
+
+    .menu li:hover .sub_menu_redes{
+        display: block;
+    }
+
+    .pagination {
+        left: 45%;
+      }
+
+    .pagination li{
+  
+        font-size: 20px;
+      
+    }
+
+    .informacion h1{
+
+        font-size: 30px;
+
+    }
+
+    .conteiner_info{
+        display: flex;
+        
+    }
+
+
+    .texto_info{
+        font-size: 20px;
+    }
+
+    .informacion_imagen img{
+
+        height: 220px;
+        width: 600px;
+        padding: 0 10px;
+    }
+
+    .conteiner_formulario{width: 50vw;}
+
+    .formulario input{
+        width: 40vw;
+    }
+
+}
+
+@media screen and (min-width:1024px){
+
+    .youtube_imagenes img:hover{
+        transform: scale(1.1);
+        transition: all 0.1s;
+    }
+
+    .caja_temario{
+        width: 50vw;
+        margin: 0 auto 20px auto;
+    }
+
+    .descripcion_cursos{
+        margin: 20px auto;
+        width: 50vw;
+    }
+    
+}
+
+@media screen and (min-width: 1025px) {
+    
+    
+    .conteiner_formulario{width: 30vw;}
+    .formulario input{
+        width: 25vw;
+    }
+    
+}
+
+
+@media screen and (min-width: 1830px) {
+    
+    #yt_ultima_img{
+        display: inline;
+    }
+    .conteiner_formulario{width: 20vw;}
+    .formulario input{
+        width: 18vw;
+    }
+    
+}
